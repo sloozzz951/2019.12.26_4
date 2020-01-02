@@ -25,13 +25,14 @@ public class GameManager : MonoBehaviour
         SceneManager.LoadScene("場景");
         StartCoroutine(Loading());
     }
+
     private IEnumerator Loading()
     {
         //print("測試 1");
         //yield return new WaitForSeconds(1);
         //print("測試 2");
 
-        AsyncOperation ao = SceneManager.LoadSceneAsync("場景");
+        AsyncOperation ao = SceneManager.LoadSceneAsync("遊戲場景");
         ao.allowSceneActivation = false;
 
         while (ao.isDone == false)
@@ -45,5 +46,15 @@ public class GameManager : MonoBehaviour
                 ao.allowSceneActivation = true;
             }
         }
+    }
+
+    public void Replay()
+    {
+        SceneManager.LoadScene("選單");
+    }
+
+    public void Quit()
+    {
+        Application.Quit();
     }
 }

@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 11152550}
   m_Layer: 0
   m_Name: "\u5730\u677F\u5674\u706B"
-  m_TagString: Untagged
+  m_TagString: "\u9677\u9631"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -27,10 +27,11 @@ GameObject:
   m_Component:
   - component: {fileID: 475764}
   - component: {fileID: 19875764}
+  - component: {fileID: 114613827144728490}
   - component: {fileID: 19975764}
   m_Layer: 0
   m_Name: Eff_Fire
-  m_TagString: Untagged
+  m_TagString: "\u9677\u9631"
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -41,9 +42,9 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 152550}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.5, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 26.41, y: 0.61606, z: 2.43}
+  m_LocalScale: {x: 1.3589, y: 1.3589, z: 1.3589}
   m_Children:
   - {fileID: 475764}
   m_Father: {fileID: 0}
@@ -3500,9 +3501,9 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 0
+    enabled: 1
     serializedVersion: 3
-    type: 0
+    type: 1
     collisionMode: 0
     colliderForce: 0
     multiplyColliderForceByParticleSize: 0
@@ -3682,7 +3683,7 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
@@ -4701,3 +4702,15 @@ Prefab:
   m_SourcePrefab: {fileID: 0}
   m_RootGameObject: {fileID: 152550}
   m_IsPrefabAsset: 1
+--- !u!114 &114613827144728490
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 175764}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43a9b81989024694f993ceaafce1a936, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
